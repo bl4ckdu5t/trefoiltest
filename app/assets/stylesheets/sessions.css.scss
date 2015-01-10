@@ -10,7 +10,6 @@ $alpha-low: .2;
 	body.auth{
 		font-family: 'Exo', sans-serif;
 		background: linear-gradient(rgba($black, $alpha-high), rgba($black, $alpha-high)), url('login-bg.jpg') no-repeat;
-		background-size: cover;
 	}
 	.login{
 		position: absolute;
