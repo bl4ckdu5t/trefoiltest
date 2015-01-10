@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Trefoiltest</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Trefoil Solutions Assesment</title>
+	<meta name="author" content="Joseph Rex">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="container">
+		<header>
+			<h1>Trefoil Solutions Office Proficiency Test<span> The following test questions should be answered in 45 minutes</span></h1>
+		</header>
+		<%= yield %>
+	</div>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
