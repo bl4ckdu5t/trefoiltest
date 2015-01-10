@@ -1,5 +1,6 @@
 class DashboardController < ApplicationController
-	def login
-		
+	layout 'dashboard'
+	def index
+
 	end
 end
