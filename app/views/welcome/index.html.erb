@@ -1,0 +1,17 @@
+<section>
+<form method="post" action="score.php" class="ac-custom ac-radio ac-circle" autocomplete="off">
+<% @questions.map.with_index do |question, qindex| %>
+<h2><%= "#{qindex + 1}. #{question.question}:" %></h2>
+<% options = question.options.split(',') %>
+<ul>
+	<% options.each_with_index do |option, oindex| %>
+	<li>
+		<input type="radio" name='<%= "q#{qindex + 1}" %>' id='<%= "r#{oindex + 1}" %>'>
+		<label for='<%= "r#{oindex + 1}" %>'><%= "#{option}".gsub('-',' ') %></label>
+	</li>
+	<% end %>
+</ul>
+<% end %>
+<button class="btn">I'm done!</button>
+</form>
+</section>

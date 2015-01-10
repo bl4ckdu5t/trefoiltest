@@ -1,0 +1,368 @@
+/* line 4, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 8, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+*:after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* @font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} */
+/* line 24, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-custom {
+  padding: 0 3em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* line 28, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-custom h2 {
+  font-size: 2.4em;
+  font-weight: 300;
+  padding: 0 0 0.5em;
+  margin: 20px 30px 0 0;
+}
+/* line 34, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-custom ul, .ac-custom ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+/* line 40, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-custom li {
+  margin: 0 auto;
+  padding: 2em 0;
+  position: relative;
+}
+/* line 45, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-custom label {
+  display: inline-block;
+  position: relative;
+  font-size: 1.3em;
+  padding: 0 0 0 80px;
+  vertical-align: top;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+/* line 57, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-custom input[type="checkbox"], .ac-custom input[type="radio"] {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 0;
+  margin-top: -25px;
+  position: absolute;
+  cursor: pointer;
+}
+/* line 67, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-custom label::before {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 0;
+  margin-top: -25px;
+  position: absolute;
+  cursor: pointer;
+}
+/* line 77, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-custom input[type="checkbox"], .ac-custom input[type="radio"] {
+  opacity: 0;
+  -webkit-appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+}
+/* line 85, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-custom label::before {
+  content: '';
+  border: 4px solid #fff;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+/* line 93, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-radio label::before {
+  border-radius: 50%;
+}
+
+/* line 99, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-custom input[type="checkbox"]:checked + label, .ac-custom input[type="radio"]:checked + label {
+  color: #fff;
+}
+/* line 102, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-custom input[type="checkbox"]:checked + label::before, .ac-custom input[type="radio"]:checked + label::before {
+  opacity: 0.8;
+}
+/* line 106, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-custom svg {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  left: 5px;
+  pointer-events: none;
+}
+/* line 114, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-custom svg path {
+  stroke: #fdfcd3;
+  stroke-width: 13px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+/* General SVG and path styles */
+/* Specific input, SVG and path styles */
+/* Circle */
+/* line 132, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-circle input[type="checkbox"], .ac-circle input[type="radio"] {
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  left: 10px;
+  position: absolute;
+}
+/* line 140, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-circle label::before {
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  left: 10px;
+  position: absolute;
+  background-color: #fff;
+  border: none;
+}
+/* line 149, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-circle svg {
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  left: -10px;
+}
+/* line 154, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-circle svg path {
+  stroke-width: 5px;
+}
+
+/* Box Fill */
+/* line 162, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-boxfill svg path, .ac-swirl svg path {
+  stroke-width: 8px;
+}
+
+/* Swirl */
+/* List */
+/* line 171, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-list ol {
+  list-style: decimal;
+  list-style-position: inside;
+}
+/* line 174, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-list ol li {
+  font-size: 2em;
+  padding: 1em 1em 0 2em;
+  text-indent: -40px;
+}
+/* line 178, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-list ol li label {
+  font-size: 1em;
+  text-indent: 0;
+  padding-left: 30px;
+}
+/* line 185, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-list label::before {
+  display: none;
+}
+/* line 188, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-list svg {
+  width: 100%;
+  height: 80px;
+  left: 0;
+  top: 1.2em;
+  margin-top: 0px;
+}
+/* line 194, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.ac-list svg path {
+  stroke-width: 4px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 50em) {
+  /* line 202, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+  section {
+    font-size: 80%;
+  }
+}
+/* Specific */
+/* line 208, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+body {
+  background: #193861;
+  color: #fff;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+/* line 214, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+a {
+  color: #fff;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+/* line 220, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+a:hover, a:focus {
+  opacity: 1;
+}
+
+/* line 224, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.container > header {
+  margin: 0 auto;
+  padding: 4em 2em;
+  text-align: center;
+  background: url(/assets/bluecube.jpg);
+}
+
+/* line 231, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.container > header h1 {
+  font-size: 2.625em;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* line 238, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.container > header span {
+  display: block;
+  font-size: 60%;
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+  padding: 0 0 0.6em 0.1em;
+}
+
+/* line 246, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+section {
+  padding: 7em 0;
+}
+
+/* line 250, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+section:nth-child(even) {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* line 254, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+section.related {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+/* line 259, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.related p {
+  margin: 0;
+  padding: 1.1em;
+}
+
+/* To Navigation Style */
+/* line 265, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.codrops-top {
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 0.69em;
+  line-height: 2.2;
+  font-weight: 700;
+}
+
+/* line 273, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.codrops-top a {
+  text-decoration: none;
+  padding: 0 1em;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+
+/* line 280, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.codrops-top span.right {
+  float: right;
+}
+
+/* line 284, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.codrops-top span.right a {
+  float: left;
+  display: block;
+}
+
+/* line 289, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.codrops-icon:before {
+  font-family: 'codropsicons';
+  margin: 0 4px;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 301, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.codrops-icon-drop:before {
+  content: "\e001";
+}
+
+/* line 305, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.codrops-icon-prev:before {
+  content: "\e004";
+}
+
+@media screen and (max-width: 25em) {
+  /* line 311, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+  .codrops-icon span {
+    display: none;
+  }
+}
+/* line 316, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.btn {
+  width: 100%;
+  background: #132741;
+  color: #fff;
+  font-size: 22px;
+  box-shadow: 0 2px 4px #000;
+  text-transform: uppercase;
+  padding: 20px;
+  border: none;
+}
+
+/* line 326, /var/www/projects/trefoiltest/app/assets/stylesheets/welcome.css.scss */
+.btn:hover {
+  background: #13253B;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

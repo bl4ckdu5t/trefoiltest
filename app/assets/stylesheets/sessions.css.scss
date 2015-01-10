@@ -1,0 +1,72 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$black: #000;
+$white: #fff;
+$alpha-normal: .5;
+$alpha-high: .8;
+$alpha-low: .2;
+@media all{
+	body.auth{
+		font-family: 'Exo', sans-serif;
+		background: linear-gradient(rgba($black, $alpha-high), rgba($black, $alpha-high)), url('login-bg.jpg') no-repeat;
+		background-size: cover;
+	}
+	.login{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		max-width: 600px;
+		*:focus, *:active{ outline: none; }
+		h1{
+			font-size: 35px;
+			font-weight: 300;
+		}
+		form{
+			input{
+				border-radius: 2px;
+				height: 40px;
+				width: 250px;
+			}
+			input:not([type="submit"]){
+				background: transparent;
+				border: solid thin $white;
+				padding: 10px;
+				display: block;
+				margin-bottom: 10px;
+				color: $white;
+			}
+			input[type="submit"]{
+				background: rgba($white, $alpha-high + .1);
+				border: none;
+				color: #444;
+				&:hover{
+					background: rgba($white, $alpha-normal + .2);
+				}
+			}
+		}
+		::-webkit-input-placeholder {
+			color: $white;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   color: $white;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: $white;  
+		}
+
+		:-ms-input-placeholder {  
+		   color: $white;  
+		}
+	}
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
